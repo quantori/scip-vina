@@ -28,5 +28,6 @@
 model parse_receptor_pdbqt(const path& rigid, const path& flex); // can throw parse_error
 model parse_receptor_pdbqt(const path& rigid); // can throw parse_error
 model parse_ligand_pdbqt  (const path& name); // can throw parse_error
+model parse_ligand_buffer(const std::string name);
 
 #endif

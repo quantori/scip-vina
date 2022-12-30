@@ -22,9 +22,9 @@
 
 #include "quaternion.h"
 
-bool quaternion_is_normalized(const qt& q) { // not in the interface, used in assertions
+/*bool quaternion_is_normalized(const qt& q) { // not in the interface, used in assertions
 	return eq(quaternion_norm_sqr(q), 1) && eq(boost::math::abs(q), 1);
-}
+}*/
 
 bool eq(const qt& a, const qt& b) { // elementwise approximate equality - may return false for equivalent rotations
 	return eq(a.R_component_1(), b.R_component_1()) && \
